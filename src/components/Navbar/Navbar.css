@@ -1,0 +1,79 @@
+.navbar {
+  width: 80%;
+  margin: auto;
+  height: 65px;
+  background-color: #fff;
+  display: flex;
+  font-family: "Josefin Sans", sans-serif;
+  overflow: hidden;
+}
+
+.nav-brand {
+  flex: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.nav-brand-img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  margin-bottom: 7px;
+  color: #fff;
+}
+
+.nav-brand h3 {
+  font-size: 20px;
+  color: #444;
+}
+
+.nav-links {
+  flex: 6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.list-items {
+  font-size: 18px;
+  color: #444;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.nav-right {
+  flex: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-register-search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+
+.login-register-search .search {
+  color: #444;
+}
+
+.login-register-search .login .register {
+  color: #444;
+}
+
+.login-list-items {
+  margin: 5px;
+  cursor: pointer;
+}
