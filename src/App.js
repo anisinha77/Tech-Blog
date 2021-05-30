@@ -1,75 +1,11 @@
 import Navbar from './components/Navbar/Navbar'
+import Home from './Screens/HomeScreen/Home'
 
 function App() {
   return (
     <>
       <Navbar />
-      <p>Hello</p>
-      <p>Hello</p>
-      <p>Hello</p>
-      <p>Hello</p>
-      <p>Hello</p>
-      <p>Hello</p>
-      <p>Hello</p>
-      <p>Hello</p>
-      <p>Hello</p>
-      <p>Hello</p>
-      <p>Hello</p>
-      <p>Hello</p>
-      <p>Hello</p>
-      <p>Hello</p>
-      <p>Hello</p>
-      <p>Hello</p>
-      <p>Hello</p>
-      <p>Hello</p>
-      <p>Hello</p>
-      <p>Hello</p>
-      <p>Hello</p>
-      <p>Hello</p>
-      <p>Hello</p>
-      <p>Hello</p>
-      <p>Hello</p>
-      <p>Hello</p>
-      <p>Hello</p>
-      <p>Hello</p>
-      <p>Hello</p>
-      <p>Hello</p>
-      <p>Hello</p>
-      <p>Hello</p>
-      <p>Hello</p>
-      <p>Hello</p>
-      <p>Hello</p>
-      <p>Hello</p>
-      <p>Hello</p>
-      <p>Hello</p>
-      <p>Hello</p>
-      <p>Hello</p>
-      <p>Hello</p>
-      <p>Hello</p>
-      <p>Hello</p>
-      <p>Hello</p>
-      <p>Hello</p>
-      <p>Hello</p>
-      <p>Hello</p>
-      <p>Hello</p>
-      <p>Hello</p>
-      <p>Hello</p>
-      <p>Hello</p>
-      <p>Hello</p>
-      <p>Hello</p>
-      <p>Hello</p>
-      <p>Hello</p>
-      <p>Hello</p>
-      <p>Hello</p>
-      <p>Hello</p>
-      <p>Hello</p>
-      <p>Hello</p>
-      <p>Hello</p>
-      <p>Hello</p>
-      <p>Hello</p>
-      <p>Hello</p>
-      <p>Hello</p>
-      <p>Hello</p>
+      <Home />
     </>
   );
 }

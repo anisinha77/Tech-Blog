@@ -18,7 +18,7 @@ const Navbar = () => {
                     <li className="list-items">HOME</li>
                     <li className="list-items">ABOUT</li>
                     <li className="list-items">CONTACT</li>
-                    <li className="list-items">WRITE</li>
+                    <li className="list-items">CREATE</li>
                 </ul>
 
             </div>
@@ -32,7 +32,7 @@ const Navbar = () => {
 
                 </ul>
             </div>
-        </div >
+        </div>
     )
 }
 
