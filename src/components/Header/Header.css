@@ -1,29 +1,16 @@
-.headerTitle {
-  display: flex;
-  flex-direction: column;
+.header {
+  position: relative;
 }
 
-.first {
-  position: absolute;
-  margin-top: 9%;
-  margin-bottom: 10px;
-  font-size: 60px;
-  padding: 5px;
-  left: 13%;
-  color: aliceblue;
-  font-family: "Lora", sans-serif;
-}
-
-.second {
-  position: absolute;
-  margin-top: 14.5%;
-  left: 16%;
-  font-size: 25px;
-  color: aliceblue;
-  font-family: cursive;
-}
-
-.headerImage {
+.header img {
   width: 100%;
-  height: 400px;
+  height: auto;
+  max-height: 60vh;
+}
+
+.headerTitle {
+  color: aliceblue;
+  position: absolute;
+  top: 25%;
+  left: 20%;
 }

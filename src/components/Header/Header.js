@@ -5,16 +5,11 @@ import headImg from '../Images/header-img.jpg'
 const Header = () => {
     return (
         <div className='header'>
-
+            <img src={headImg} alt="" />
             <div className="headerTitle">
-                <div className="first">Daily Blogs</div>
-                <div className="second">A Peak into Future.</div>
+                <h1>Daily Blogs</h1>
+                <p>A Peek into Future</p>
             </div>
-
-            <div className="headImage">
-                <img className="headerImage" src={headImg} alt="" />
-            </div>
-
         </div>
     )
 }

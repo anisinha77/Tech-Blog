@@ -1,39 +1,35 @@
 import React from 'react'
-import logo from '../Images/brand.jpg'
 import './Navbar.css'
+import { Navbar, Nav, Container, Button, Form, FormControl } from 'react-bootstrap'
+import logo from '../Images/brand.jpg'
 
-const Navbar = () => {
+const HeaderNavbar = () => {
     return (
-        <div className="navbar">
-            {/* NavBar branding */}
-            <div className="nav-brand">
-                <img className='nav-brand-img' src={logo} alt="branding" />
-                <h3>TECH WORLD</h3>
-            </div>
+        <div className="headerNav">
+            <Navbar bg="light" expand="lg" collapseOnSelect>
+                <Container>
+                    <Navbar.Brand href="#home" className="nav-brand">
+                        <img className="brandImg" src={logo} alt="logo" />
+                        <span className="brandName">TECH WORLD</span>
+                    </Navbar.Brand>
+                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                    <Navbar.Collapse id="basic-navbar-nav">
+                        <Nav style={{ margin: "auto" }}>
+                            <Nav.Link href="#home" style={{ padding: "10px" }}>HOME</Nav.Link>
+                            <Nav.Link href="#link" style={{ padding: "10px" }}>ABOUT</Nav.Link>
+                            <Nav.Link href="#link" style={{ padding: "10px" }}>CONTACT</Nav.Link>
+                            <Nav.Link href="#link" style={{ padding: "10px" }}>CREATE</Nav.Link>
+                        </Nav>
+                        <Nav style={{ marginLeft: "auto" }}>
+                            <Nav.Link href="#home"><i class="fas fa-search"></i></Nav.Link>
+                            <Nav.Link href="#home">LOGIN</Nav.Link>
+                        </Nav>
 
-
-            <div className="nav-links">
-
-                <ul className="nav-list">
-                    <li className="list-items">HOME</li>
-                    <li className="list-items">ABOUT</li>
-                    <li className="list-items">CONTACT</li>
-                    <li className="list-items">CREATE</li>
-                </ul>
-
-            </div>
-
-
-            <div className="nav-right">
-                <ul className='login-register-search'>
-                    <li className="login-list-items search"><i class="fas fa-search"></i></li>
-                    <li className="login-list-items login">LOGIN</li>
-                    <li className="login-list-items register">REGISTER</li>
-
-                </ul>
-            </div>
-        </div>
+                    </Navbar.Collapse>
+                </Container>
+            </Navbar>
+        </div >
     )
 }
 
-export default Navbar
+export default HeaderNavbar
