@@ -9,8 +9,20 @@
 }
 
 .headerTitle {
-  color: aliceblue;
+  color: #fff;
   position: absolute;
-  top: 25%;
-  left: 20%;
+  font-family: "lora", sans-serif;
+  top: 28%;
+  left: 6%;
+}
+
+.headerTitle h1 {
+  color: #fff;
+  font-size: 5vw;
+}
+
+.headerTitle p {
+  color: #fff;
+  font-size: 2.5vw;
+  margin-left: 15px;
 }

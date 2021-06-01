@@ -1,0 +1,65 @@
+.sidebar {
+  flex: 3;
+  display: flex;
+  margin: 20px;
+  padding-bottom: 20px;
+  border-radius: 10px;
+  background-color: #fdfbfb;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-family: "Varela Round", sans-serif;
+  width: 80%;
+  margin: 10px;
+  padding: 5px;
+  line-height: 20px;
+  font-weight: 600;
+  text-align: center;
+  border-top: 1px solid #635e5e;
+  border-bottom: 1px solid #635e5e;
+  color: #222;
+}
+
+.author-image {
+  margin: 15px;
+}
+
+.bio {
+  padding: 20px;
+}
+
+.cat-list {
+  list-style: none;
+  /* display: inline-block; */
+  margin-bottom: 30px;
+  /* width: 50%; */
+}
+
+.cat-listItems {
+  display: inline-block;
+  width: 50%;
+  padding: 2px;
+  cursor: pointer;
+}
+
+.social-list {
+  width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+
+.social-listItems {
+  font-size: 20px;
+  margin: 10px;
+  cursor: pointer;
+}

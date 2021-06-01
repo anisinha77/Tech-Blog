@@ -13,7 +13,7 @@ const HeaderNavbar = () => {
                         <span className="brandName">TECH WORLD</span>
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                    <Navbar.Collapse id="basic-navbar-nav">
+                    <Navbar.Collapse id="basic-navbar-nav" >
                         <Nav style={{ margin: "auto" }}>
                             <Nav.Link href="#home" style={{ padding: "10px" }}>HOME</Nav.Link>
                             <Nav.Link href="#link" style={{ padding: "10px" }}>ABOUT</Nav.Link>
@@ -28,7 +28,7 @@ const HeaderNavbar = () => {
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
-        </div >
+        </div>
     )
 }
 
