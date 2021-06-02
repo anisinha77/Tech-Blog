@@ -1,0 +1,67 @@
+.post-screen {
+  flex: 9;
+}
+
+.post-container {
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.post-image {
+  width: 100%;
+  height: auto;
+  margin-left: 2rem;
+  margin-top: 1.5vh;
+  margin-bottom: 1.5vh;
+  object-fit: cover;
+}
+
+.post-title {
+  text-align: center;
+  font-size: 3vw;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 600;
+  color: #444;
+}
+
+.edit-delete {
+  float: right;
+  font-size: 1.5vw;
+}
+
+.edit-icon {
+  color: teal;
+  margin-left: 0.5vw;
+  cursor: pointer;
+}
+
+.delete-icon {
+  color: tomato;
+  margin-left: 0.5vw;
+  cursor: pointer;
+}
+
+.info {
+  width: 95%;
+  margin: auto;
+}
+
+.post-details {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8vw;
+  font-family: "Varela Round", sans-serif;
+  color: #b39656;
+}
+
+.description {
+  margin-top: 2.5vh;
+  color: rgb(63, 59, 59);
+  line-height: 25px;
+}
+
+.description::first-letter {
+  margin-left: 2vw;
+  font-size: 2vw;
+  font-weight: 600;
+}

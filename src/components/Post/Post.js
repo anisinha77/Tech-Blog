@@ -5,7 +5,7 @@ import BlogImage from '../Images/BlogImage.jpg'
 
 const Post = () => {
     return (
-        <Card className="card d-flex justify-content-center my-3 p-3 rounded">
+        <Card className="card my-3 p-3 rounded shadow">
             <Card.Img src={BlogImage} variant='top'></Card.Img>
             <Card.Body>
                 <Card.Title as="div" className="text-center blog-title"><strong>This is title</strong></Card.Title>

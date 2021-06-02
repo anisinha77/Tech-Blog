@@ -1,11 +1,12 @@
 import Navbar from './components/Navbar/Navbar'
-import Home from './Screens/HomeScreen/Home'
+// import Home from './Screens/HomeScreen/Home'
+import Post from './Screens/PostScreen/PostScreen'
 
 function App() {
   return (
     <>
       <Navbar />
-      <Home />
+      <Post />
     </>
   );
 }
