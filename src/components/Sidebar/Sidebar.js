@@ -5,12 +5,12 @@ const Sidebar = () => {
     return (
         <div className="sidebar">
             <div className="sidebar-container">
-                <div className="title">ABOUT ME</div>
+                <div className="sidebar-title">ABOUT ME</div>
                 <img className="author-image" src="https://findicons.com/files/icons/1580/devine_icons_part_2/128/account_and_control.png" alt="Author Photo" />
                 <p className="bio">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum quas adipisci atque ipsum nobis totam saepe harum id mollitia dignissimos.</p>
             </div>
             <div className="sidebar-container">
-                <div className="title">CATEGORIES</div>
+                <div className="sidebar-title">CATEGORIES</div>
                 <ul className="cat-list">
                     <li className="cat-listItems">Web dev</li>
                     <li className="cat-listItems">Machine</li>
@@ -20,7 +20,7 @@ const Sidebar = () => {
             </div>
             <div className="sidebar-container">
 
-                <div className="title">FOLLOW US</div>
+                <div className="sidebar-title">FOLLOW US</div>
                 <ul className="social-list">
                     <li className="social-listItems"><i class="fab fa-facebook-square"></i></li>
                     <li className="social-listItems"><i class="fab fa-twitter-square"></i></li>

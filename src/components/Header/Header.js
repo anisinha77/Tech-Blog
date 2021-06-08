@@ -7,7 +7,7 @@ const Header = () => {
         <div className='header'>
             <img src={headImg} alt="" />
             <div className="headerTitle">
-                <h1>Daily Blogs</h1>
+                <h1>Tech Blog</h1>
                 <p>A Peek into Future</p>
             </div>
         </div>

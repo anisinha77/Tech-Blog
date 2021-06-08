@@ -2,7 +2,7 @@
   position: relative;
 }
 
-.header img {
+.header > img {
   width: 100%;
   height: auto;
   max-height: 60vh;
@@ -16,12 +16,12 @@
   left: 6%;
 }
 
-.headerTitle h1 {
+.headerTitle > h1 {
   color: #fff;
   font-size: 5vw;
 }
 
-.headerTitle p {
+.headerTitle > p {
   color: #fff;
   font-size: 2.5vw;
   margin-left: 15px;

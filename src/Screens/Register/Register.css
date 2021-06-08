@@ -1,0 +1,53 @@
+.Register {
+  height: 92vh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: url("https://www.desktopbackground.org/download/o/2011/04/22/191656_colors-purple-backgrounds-and-codes-for-any-blog-web-page-phone_600x600_h.jpg");
+  background-size: cover;
+}
+
+.title {
+  font-size: 3.5em;
+  margin-top: 1.5em;
+  color: rgb(27, 25, 25);
+}
+
+.Register-form {
+  display: flex;
+  margin: auto;
+  margin-top: 1.8em;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Register-form > label {
+  font-size: 1.5em;
+}
+
+.Register-form > input {
+  font-size: 1.3em;
+  color: grey;
+  border: 1px solid lightgrey;
+  background-color: white;
+  margin-top: 0.4em;
+}
+
+.already {
+  color: rgb(204, 23, 23);
+  text-align: center;
+  font-size: 1.5em;
+  padding-top: 0.1em;
+}
+
+input[type="button"] {
+  margin-top: 0.8em;
+  background-color: black;
+  font-size: 1.1em;
+  border-radius: 8px;
+  color: white;
+  width: 8vw;
+  align-self: center;
+}

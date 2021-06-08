@@ -28,8 +28,6 @@ const Settings = () => {
 
                 </form>
             </div>
-
-
             <Sidebar />
         </div>
     )
