@@ -36,7 +36,7 @@ const HeaderNavbar = () => {
                             <Nav.Link href="#home"><i class="fas fa-search"></i></Nav.Link>
                             {user == false && <Link className="to-link" to="/login"><Nav.Link href="#home">LOGIN</Nav.Link></Link>}
                             {user == false && <Link className="to-link" to="/register"><Nav.Link href="#home">REGISTER</Nav.Link></Link>}
-                            {user && <Link className="to-link" to="/register"><Nav.Link href="#home">LOGOUT</Nav.Link></Link>}
+                            {user && <Link className="to-link" to="/"><Nav.Link href="#home">LOGOUT</Nav.Link></Link>}
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
