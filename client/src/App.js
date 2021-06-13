@@ -5,7 +5,7 @@ import Create from './Screens/CreateBlogScreen/Create'
 import Settings from './Screens/Settings/Settings'
 import Login from './Screens/Login/Login'
 import Register from './Screens/Register/Register'
-import { BrowserRouter as Router, Link, Switch, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
 function App() {
   const user = false;

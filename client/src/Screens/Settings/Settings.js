@@ -14,7 +14,7 @@ const Settings = () => {
                 <form className="settings-form">
                     <label>Profile Picture</label>
                     <div className="pp-section">
-                        <img className="pp" src={profile} alt="Profile Picture" />
+                        <img className="pp" src={profile} alt="Profile" />
                         <label htmlFor="upload-pp"><i className=" upload-icon fas fa-user-circle"></i></label>
                         <input type="file" id="upload-pp" style={{ display: "none" }} />
                     </div>

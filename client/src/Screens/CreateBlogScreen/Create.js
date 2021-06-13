@@ -5,7 +5,7 @@ import FormImage from '../../components/Images/FormImage.jpg'
 const Create = () => {
     return (
         <div className="blog-form">
-            <img className="uploaded-img" src={FormImage} alt="Blog photo" />
+            <img className="uploaded-img" src={FormImage} alt="Blog" />
             <form className="create-form">
                 <div className="form-container">
                     <label htmlFor="imageFile">
