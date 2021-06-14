@@ -36,13 +36,13 @@
 }
 
 .already {
-  color: rgb(204, 23, 23);
+  color: blue;
   text-align: center;
   font-size: 1.5em;
   padding-top: 0.1em;
 }
 
-input[type="button"] {
+input[type="submit"] {
   margin-top: 0.8em;
   background-color: black;
   font-size: 1.1em;
