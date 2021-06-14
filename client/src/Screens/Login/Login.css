@@ -42,7 +42,7 @@
   padding-top: 0.1em;
 }
 
-input[type="button"] {
+input[type="submit"] {
   margin-top: 0.8em;
   background-color: black;
   font-size: 1.1em;
@@ -50,4 +50,9 @@ input[type="button"] {
   color: white;
   width: 8vw;
   align-self: center;
+}
+
+.login-button:disabled {
+  cursor: not-allowed;
+  background-color: #444;
 }

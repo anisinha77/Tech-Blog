@@ -9,7 +9,7 @@ const Create = () => {
             <form className="create-form">
                 <div className="form-container">
                     <label htmlFor="imageFile">
-                        <i class="upload-img-icon fas fa-plus"></i>
+                        <i className="upload-img-icon fas fa-plus"></i>
                     </label>
                     <input type="file" id="imageFile" style={{ display: 'none' }} />
                     <input placeholder="Title" className="blog-title" type="text" id="title" autoFocus={true} />

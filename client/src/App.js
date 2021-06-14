@@ -6,18 +6,20 @@ import Settings from './Screens/Settings/Settings'
 import Login from './Screens/Login/Login'
 import Register from './Screens/Register/Register'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import { Context } from './context/Context'
+import { useContext } from 'react'
 
 function App() {
-  const user = false;
+  const { user } = useContext(Context)
   return (
     <Router>
       <Navbar />
       <Switch>
         <Route exact path='/'><Home /></Route>
         <Route exact path='/register'><Register /></Route>
-        <Route exact path='/login'>{(user === false) ? <Login /> : <Home />}</Route>
-        <Route exact path='/create'>{(user === false) ? <Login /> : <Create />}</Route>
-        <Route exact path='/settings'>{(user === false) ? <Login /> : <Settings />}</Route>
+        <Route exact path='/login'>{(user === null) ? <Login /> : <Home />}</Route>
+        <Route exact path='/create'>{(user === null) ? <Login /> : <Create />}</Route>
+        <Route exact path='/settings'>{(user === null) ? <Login /> : <Settings />}</Route>
         <Route exact path='/post/:id'><Post /></Route>
       </Switch>
 
