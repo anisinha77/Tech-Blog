@@ -7,6 +7,9 @@ import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 
 const Index = () => {
+
+    const PF = "http://localhost:5000/images/"
+
     let location = useLocation();
     const path = location.pathname.split("/")[2]
     // console.log(path)
@@ -26,7 +29,7 @@ const Index = () => {
         <div className="post-screen">
             <div className="post-container">
                 {post.photo &&
-                    (<img className="post-image" src={post.photo} alt="Post Blog" />)}
+                    (<img className="post-image" src={PF + post.photo} alt="Post Blog" />)}
                 <h2 className="post-title">
                     <strong>{post.title}</strong>
                     <div className="edit-delete">

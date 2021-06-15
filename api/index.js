@@ -7,28 +7,34 @@ import userRoute from './routes/users.js'
 import postsRoute from './routes/posts.js'
 import categoryRoute from './routes/categories.js'
 import multer from 'multer'
+import path from 'path'
+import { fileURLToPath } from 'url';
 
 const app = express()
 dotenv.config()
 
 app.use(express.json()) //allows to send json data
 
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+app.use("/images", express.static(path.join(__dirname, "/images")));
+
 connectDB();
 
 //storage file for storing images
 const storage = multer.diskStorage({
-    destination: (req, file, callback) => {
-        callback(null, "images")
+    destination: (req, file, cb) => {
+        cb(null, "images");
     },
-    filename: (req, file, callback) => {
-        callback(null, "hello.jpeg")
-    }
-})
+    filename: (req, file, cb) => {
+        cb(null, req.body.name);
+    },
+});
 
-const upload = multer({ storage: storage })
+const upload = multer({ storage: storage });
 app.post("/api/upload", upload.single("file"), (req, res) => {
-    res.status(200).json("File has been uploaded")
-})
+    res.status(200).json("File has been uploaded");
+});
+
 
 
 //routes

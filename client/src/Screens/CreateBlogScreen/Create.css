@@ -56,11 +56,11 @@
   outline: none;
 }
 
-.publish-btn {
+input[type="submit"] {
   position: absolute;
   top: 1.5vw;
   right: 4vw;
-  background-color: teal;
+  background-color: teal !important;
   color: #fff;
   border-radius: 8px;
   padding: 0.05vw;
