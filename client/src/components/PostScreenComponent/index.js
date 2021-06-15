@@ -1,13 +1,16 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './index.css'
 // import BlogImage from '../Images/BlogImage.jpg'
 import { useLocation } from 'react-router'
 import axios from 'axios'
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
+import { Context } from '../../context/Context'
 
 const Index = () => {
 
+
+    const { user } = useContext(Context)
     const PF = "http://localhost:5000/images/"
 
     let location = useLocation();
@@ -25,6 +28,18 @@ const Index = () => {
         fetchpost()
     }, [path])
 
+    const handleDelete = async () => {
+        try {
+            await axios.delete(`/posts/${post._id}`, {
+                data: { username: user.username }
+            })
+            window.location.replace("/")
+
+        } catch (error) {
+
+        }
+    }
+
     return (
         <div className="post-screen">
             <div className="post-container">
@@ -32,10 +47,13 @@ const Index = () => {
                     (<img className="post-image" src={PF + post.photo} alt="Post Blog" />)}
                 <h2 className="post-title">
                     <strong>{post.title}</strong>
-                    <div className="edit-delete">
-                        <span className="edit-icon"><i className="far fa-edit"></i></span>
-                        <span className="delete-icon"><i className="far fa-trash-alt"></i></span>
-                    </div>
+                    {post.username === user?.username &&
+
+                        <div className="edit-delete">
+                            <span className="edit-icon"><i className="far fa-edit"></i></span>
+                            <span className="delete-icon"><i className="far fa-trash-alt" onClick={handleDelete}></i></span>
+                        </div>
+                    }
                 </h2>
                 <div className="info">
                     <div className="post-details">
