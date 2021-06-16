@@ -7,6 +7,7 @@ import axios from 'axios'
 const Create = () => {
     const [title, setTitle] = useState("")
     const [description, setDescription] = useState("")
+    const [categories, setCategories] = useState("")
     const [file, setFile] = useState("")
     const { user } = useContext(Context)
 
@@ -15,8 +16,11 @@ const Create = () => {
         const newPost = {
             username: user.username,
             title,
-            description
+            description,
+            categories
         }
+
+
         if (file) {
             const data = new FormData()
             const filename = Date.now() + file.name
@@ -52,6 +56,8 @@ const Create = () => {
                         onChange={(e) => setTitle(e.target.value)} />
                 </div>
                 <div className="form-container">
+                    <input placeholder="Categories" className="blog-title" type="text" id="categories"
+                        onChange={(e) => setCategories(e.target.value)} />
                     <textarea className="blog-desc" placeholder="Tell your story...."
                         onChange={(e) => setDescription(e.target.value)}
                     ></textarea>

@@ -2,6 +2,7 @@ import React from 'react'
 import './Register.css'
 import { useState } from 'react'
 import axios from 'axios'
+import { Link } from 'react-router-dom'
 
 const Register = () => {
     const [username, setUsername] = useState("")
@@ -37,7 +38,7 @@ const Register = () => {
                 <input type="submit" value="Register" className="register-submit" />
                 {error && <span style={{ color: "red", marginTop: "10px", textAlign: "center", fontSize: "20px" }}>Something went wrong!!</span>}
                 <span className="already">Already have an Account!!</span>
-                <input type="button" value="Login" className="register-submit" />
+                <Link to="/login" ><input type="button" value="Login" className="register-submit" /></Link>
             </form>
         </div>
     )

@@ -41,6 +41,7 @@
   /* display: inline-block; */
   margin-bottom: 30px;
   /* width: 50%; */
+  align-items: center;
 }
 
 .cat-listItems {

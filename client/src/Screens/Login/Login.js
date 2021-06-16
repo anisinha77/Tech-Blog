@@ -3,6 +3,7 @@ import './Login.css'
 import { useRef, useContext } from 'react'
 import { Context } from '../../context/Context'
 import axios from 'axios'
+import { Link } from 'react-router-dom'
 
 const Login = () => {
 
@@ -36,7 +37,7 @@ const Login = () => {
                 <input type="submit" className="login-submit" value="Login" disabled={isFetching} />
                 <span className="already">Don't have an account?</span>
                 {/* <input type="button" className="login-submit" value="Register" /> */}
-                <button className="login-submit">Register</button>
+                <Link to="/register"> <button className="login-submit">Register</button></Link>
             </form>
         </div>
     )

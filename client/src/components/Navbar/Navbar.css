@@ -2,6 +2,9 @@
   /* height: 8vh; */
   /* margin-bottom: 2em; */
 }
+.nav-con {
+  width: 70% !important;
+}
 .brandImg {
   height: 35px;
   width: 40px;

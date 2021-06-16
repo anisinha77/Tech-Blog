@@ -15,7 +15,7 @@ const HeaderNavbar = () => {
     return (
         <div className="headerNav">
             <Navbar bg="light" expand="lg" collapseOnSelect>
-                <Container>
+                <Container className="nav-con">
                     <Link className="to-link" to="/">
                         <Navbar.Brand href="#home" className="nav-brand">
                             <img className="brandImg" src={logo} alt="logo" />
@@ -26,14 +26,10 @@ const HeaderNavbar = () => {
                     <Navbar.Collapse id="basic-navbar-nav" >
                         <Nav style={{ margin: "auto" }}>
                             <Link className="to-link" to='/'>
-                                <Nav.Link href="#home" style={{ padding: "10px" }}>HOME</Nav.Link>
+                                <Nav.Link href="#home" style={{ padding: "10px", marginLeft: "80px" }}>HOME</Nav.Link>
                             </Link>
-                            <Link className="to-link" to='/about'>
-                                <Nav.Link href="#home" style={{ padding: "10px" }}>ABOUT</Nav.Link>
-                            </Link>
-                            <Link className="to-link" to="/contact">
-                                <Nav.Link href="#home" style={{ padding: "10px" }}>CONTACT</Nav.Link>
-                            </Link>
+
+
                             <Link className="to-link" to="/create">
                                 <Nav.Link href="#home" style={{ padding: "10px" }}>CREATE</Nav.Link>
                             </Link>
@@ -53,3 +49,4 @@ const HeaderNavbar = () => {
 }
 
 export default HeaderNavbar
+

@@ -44,12 +44,26 @@ const Settings = () => {
         }
     };
 
+    const handleDelete = async () => {
+        try {
+            // console.log(`${user._id}`)
+            await axios.delete(`/users/${user._id}`, {
+                data: { userId: user._id }
+
+            })
+            dispatch({ type: "LOGOUT" })
+            // window.location.replace("/")
+        } catch (error) {
+
+        }
+    }
+
     return (
         <div className="settings-page">
             <div className="settings-container">
                 <div className="heading">
                     <span className="update-account">Update Your Profile </span>
-                    <span className="delete-account">Delete Profile </span>
+                    <span className="delete-account" onClick={handleDelete}>Delete Profile </span>
                 </div>
                 <form className="settings-form" onSubmit={handleUpdate} >
                     <label>Profile Picture</label>
