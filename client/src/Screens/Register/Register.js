@@ -34,10 +34,10 @@ const Register = () => {
                 <input type="email" id="user-id" placeholder="john@gmail.com" onChange={(e) => setEmail(e.target.value)} />
                 <label htmlFor="password">Password</label>
                 <input type="password" id="password" placeholder="Password" onChange={(e) => setPassword(e.target.value)} />
-                <input type="submit" value="Register" />
+                <input type="submit" value="Register" className="register-submit" />
                 {error && <span style={{ color: "red", marginTop: "10px", textAlign: "center", fontSize: "20px" }}>Something went wrong!!</span>}
                 <span className="already">Already have an Account!!</span>
-                <input type="submit" value="Login" />
+                <input type="button" value="Login" className="register-submit" />
             </form>
         </div>
     )

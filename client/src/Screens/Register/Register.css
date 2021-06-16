@@ -42,9 +42,9 @@
   padding-top: 0.1em;
 }
 
-input[type="submit"] {
+.register-submit {
   margin-top: 0.8em;
-  background-color: black;
+  background-color: black !important;
   font-size: 1.1em;
   border-radius: 8px;
   color: white;

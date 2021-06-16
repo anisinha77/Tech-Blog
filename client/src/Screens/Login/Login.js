@@ -33,9 +33,10 @@ const Login = () => {
                 <input type="text" id="username" placeholder="username" ref={userRef} />
                 <label htmlFor="password">Password</label>
                 <input type="password" id="password" className="login-button " placeholder="Password" ref={passwordRef} />
-                <input type="submit" value="Login" disabled={isFetching} />
+                <input type="submit" className="login-submit" value="Login" disabled={isFetching} />
                 <span className="already">Don't have an account?</span>
-                <input type="submit" value="Register" />
+                {/* <input type="button" className="login-submit" value="Register" /> */}
+                <button className="login-submit">Register</button>
             </form>
         </div>
     )

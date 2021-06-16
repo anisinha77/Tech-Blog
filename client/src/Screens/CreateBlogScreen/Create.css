@@ -56,7 +56,7 @@
   outline: none;
 }
 
-input[type="submit"] {
+.create-submit {
   position: absolute;
   top: 1.5vw;
   right: 4vw;

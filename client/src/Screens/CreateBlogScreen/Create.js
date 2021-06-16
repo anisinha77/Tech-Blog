@@ -56,7 +56,7 @@ const Create = () => {
                         onChange={(e) => setDescription(e.target.value)}
                     ></textarea>
                 </div>
-                <input type="submit" value="Publish" />
+                <input type="submit" value="Publish" className="create-submit" />
             </form>
         </div>
     )
